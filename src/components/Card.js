@@ -1,16 +1,12 @@
 import React from "react";
 
-function Card() {
+function Card(props) {
     return (
-        <div className="card">
-            <div className="card-body">
-                <img 
-                    class="card-img" 
-                    src="..." 
-                    alt="Card image cap" 
-                />
-            </div>
-        </div>
+        <img 
+            className="card-img"
+            alt={props.name}
+            src={props.image}
+        />
     );
 }
 
