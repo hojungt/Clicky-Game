@@ -1,1 +1,2 @@
-# Clicky-Game
+# Clicky Game
+
