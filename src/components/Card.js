@@ -8,6 +8,7 @@ function Card(props) {
             // to find images locally, must write path and `require` in `{}`
             src={require("../images/" + props.image)}
             style={style}
+            // pass parameter to an event handler or callback?
             onClick={() => props.checkGuess(props.id)}
         />
     );

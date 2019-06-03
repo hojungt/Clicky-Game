@@ -15,12 +15,12 @@ export class Game extends Component {
         imagesUnguessed: images,
         winScore: 0,
         topScore: 0,
-        message: "Click an image to begin",
+        message: "Click an image to begin.",
     };  
 
     // shuffle by array.sort
     shuffleArray = (array) => {
-        array.sort(() => Math.random - 0.5);
+        array.sort(() => Math.random() - 0.5);
     };
     // `sort()` sorts the elements of an array in place and returns the sorted array
     // The default sort order is built upon converting the elements into strings, 
@@ -32,7 +32,7 @@ export class Game extends Component {
         this.setState({
             images: images,
             imagesUnguessed: imagesNew,    
-            winScore: this.state.score +1,
+            winScore: this.state.winScore +1,
             message: "Your guess is right!"
         })
     };
@@ -50,7 +50,23 @@ export class Game extends Component {
 
     // check if the image has been guessed, compared to original images.json
     checkGuess = (id) => {
-        
+
+        // find an id change from onClick event within the unguessed images array
+        const isGuessed = this.state.imagesUnguessed.find( image => image.id === id );
+        // console.log("image", isGuessed);
+
+        // if the image has `undefined` in its onClick property,
+        // then the image has been clicked and thus lose the game.
+        if (isGuessed === undefined) {
+            this.setStateGuessWrong();
+        }
+
+        else {
+            const imagesNew = this.state.imagesUnguessed.filter( image => image.id !== id)
+            this.setStateGuessRight(imagesNew);
+        }
+
+        this.shuffleArray(images);
     };
 
     render() {
@@ -65,11 +81,13 @@ export class Game extends Component {
 
                 <Container>
                     <Row>
-                        {this.state.images.map(image => 
-                            (<Card 
+                        {this.state.images.map(image => (
+                            <Card 
                                 id={image.id}
+                                key={image.id}
                                 name={image.name}
                                 image={image.image}
+                                checkGuess={this.checkGuess}
                             />
                         ))}
                     </Row>
