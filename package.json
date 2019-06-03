@@ -1,5 +1,6 @@
 {
   "name": "clicky-game",
+  "homepage": "https://hojungt.github.io/Clicky-Game/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
