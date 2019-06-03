@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.js": "/static/js/main.e0e05a67.chunk.js",
-    "main.js.map": "/static/js/main.e0e05a67.chunk.js.map",
+    "main.js": "/static/js/main.0ccb719f.chunk.js",
+    "main.js.map": "/static/js/main.0ccb719f.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.65aa1cca.chunk.js": "/static/js/2.65aa1cca.chunk.js",
-    "static/js/2.65aa1cca.chunk.js.map": "/static/js/2.65aa1cca.chunk.js.map",
+    "static/js/2.884c28c3.chunk.js": "/static/js/2.884c28c3.chunk.js",
+    "static/js/2.884c28c3.chunk.js.map": "/static/js/2.884c28c3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d78f57c8260ac20eaa4c3bba2682a7dd.js": "/precache-manifest.d78f57c8260ac20eaa4c3bba2682a7dd.js",
-    "service-worker.js": "/service-worker.js"
+    "precache-manifest.e05202f65bcfc2717c1d910935a0137e.js": "/precache-manifest.e05202f65bcfc2717c1d910935a0137e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/beth.png": "/static/media/beth.4d5e65a0.png",
+    "static/media/birdperson.png": "/static/media/birdperson.612ba8d4.png",
+    "static/media/evilmorty.png": "/static/media/evilmorty.0657e1f4.png",
+    "static/media/giantrick.png": "/static/media/giantrick.978b3847.png",
+    "static/media/goldenford.png": "/static/media/goldenford.3774b39d.png",
+    "static/media/jerry.png": "/static/media/jerry.af8e8a84.png",
+    "static/media/jessica.png": "/static/media/jessica.a9644830.png",
+    "static/media/meeseek.png": "/static/media/meeseek.9667b7ee.png",
+    "static/media/morty.png": "/static/media/morty.244deeda.png",
+    "static/media/rick.png": "/static/media/rick.06b65841.png",
+    "static/media/summer.png": "/static/media/summer.afdbb7bf.png",
+    "static/media/what.png": "/static/media/what.d61b2d5b.png"
   }
 }
